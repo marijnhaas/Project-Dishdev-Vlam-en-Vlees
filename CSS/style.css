@@ -8,25 +8,24 @@
   .openbtn {
       grid-column: 1;
       justify-self: start;
-      /* justify-content: flex-start; */
+     
   }
   
 
-    /* The sidepanel menu */
     .sidepanel {
-        height: 100vh; /* Specify a height */
-        width: 0; /* 0 width - change this with JavaScript */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Stay on top */
+        height: 100vh; 
+        width: 0; 
+        position: fixed;
+        z-index: 1; 
         top: 0;
         left: 0;
-        background-color: #111; /* Black*/
-        overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 60px; /* Place content 60px from the top */
-        transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+        background-color: #111;
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition: 0.5s; 
       }
       
-      /* The sidepanel links */
+
       .sidepanel a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
@@ -35,13 +34,11 @@
         display: block;
         transition: 0.3s;
       }
-      
-      /* When you mouse over the navigation links, change their color */
+
       .sidepanel a:hover {
         color: #f1f1f1;
       }
       
-      /* Position and style the close button (top right corner) */
       .sidepanel .closebtn {
         position: absolute;
         top: 0;
@@ -50,7 +47,6 @@
         margin-left: 50px;
       }
       
-      /* Style the button that is used to open the sidepanel */
       .openbtn {
         font-size: 20px;
         cursor: pointer;
@@ -58,6 +54,7 @@
         color: white;
         padding: 10px 15px;
         border: none;
+        border-radius: 5px;
       }
       .normnav {
         display: none;
@@ -93,8 +90,7 @@
         min-height: 100vh;
         background-color: #444444;
     }
-    
-    /* Header */
+   
     .header {
         background: #333;
         color: white;
@@ -116,19 +112,16 @@
         text-decoration: none;
     }
     
-    /* Afbeelding */
     .hoofdafb img {
         width: 100%;
         height: auto;
     }
     
-    /* Content */
     .about {
         padding: 50px 20px;
         color: white;
     }
     
-    /* Footer */
     .footer {
         background: #333;
         color: white;
@@ -146,3 +139,44 @@
     .Voorgerechten, .Hoofdgerechten, .Nagerechten, .Tijden, .loca {
       color: white;
     }
+    .reserveren {
+      background: #363636;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      align-items: center;
+  }
+  form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+  }
+  label {
+      font-weight: bold;
+      color: white;
+  }
+  input, select, .submitknop {
+      padding: 10px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+  .submitknop {
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+  }
+  .submitknop:hover {
+      background-color: #218838;
+  }
+  
+.resContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p, h2 {
+  color: white;
+}
